@@ -44,7 +44,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: October 5, 2026</p>
+<p class="updated">Last updated: November 2, 2026</p>
 
 <p>
 LiDAR Scanner is designed to process 3D scans primarily on your device.
@@ -69,6 +69,13 @@ Your scans leave your device only when you explicitly choose to share,
 export, or send them using features provided by iOS.
 </p>
 
+<h2>1A. TrueDepth and Face Data</h2>
+<p><strong>Data accessed and purpose.</strong> When you use a face scanning mode, LiDAR Scan 3D uses Apple's TrueDepth camera and ARKit/AVFoundation on your device to access facial surface geometry (vertices and triangles), depth measurements, face/camera position and orientation, camera calibration information, and camera images/color information. The ARKit face scanning mode also reads eye-blink and jaw-opening values to select suitable, neutral-expression frames and improve scan quality. These inputs are used to create, align, preview, and optionally export a 3D model of the face, including color/texture where supported. They are not used to identify or authenticate a person, infer a person's identity, create advertising profiles, or train machine-learning models.</p>
+<p><strong>Processing and storage.</strong> Face scanning and model generation are performed locally on your device. Working frames, geometry, and scan results can be held in app memory while the app is running. Starting a new scan resets working scan data. Exporting or preparing a model for preview/sharing creates files in the app's local temporary storage, including geometry and, where applicable, color/texture files. These files can remain until removed by the app or by iOS; closing the scanning screen does not guarantee immediate erasure of all working data or temporary files.</p>
+<p><strong>Saved scans and retention.</strong> If you choose to save a scan to My Scans, the app stores its model file and library record in its local Documents directory. Saved scans have no automatic expiry and remain until you delete them or remove the app and its data. Deleting a scan from My Scans removes that scan's library record and associated saved model files. It does not delete copies previously exported to Files, shared with other apps/people, or retained in backups. Local app documents may be included in device backups depending on your device settings. Backup copies are controlled through the relevant device or backup service settings.</p>
+<p><strong>Disclosure and sharing.</strong> The app does not automatically send TrueDepth measurements, facial geometry, working camera frames, or face models to the developer, Cloudflare, Resend, or any other third party. The developer does not operate a face-data server or face-data database. If you explicitly export or share a face model using the iOS share interface, the selected files are provided to the destination you choose, which may store them under its own policies. Exported color models may include images/textures showing the face.</p>
+<p><strong>Optional feedback.</strong> The separate Feedback feature does not automatically attach face scan files, facial measurements, or working camera frames. If you voluntarily select a screenshot/photo that contains a face or face model and send it with feedback, that image is sent through Cloudflare Workers and Resend to our support mailbox, as described in sections 2–5. Such attachments follow the support retention and deletion-request practices in sections 5 and 8. Do not attach face images you do not wish to disclose.</p>
+<p><strong>Your controls.</strong> Face scanning requires camera permission. You may decline or revoke that permission in iOS Settings. You choose whether to save, export, share, or submit images with feedback. To remove local saved face scans, delete them in My Scans; manage exported/shared copies and backups separately. For deletion of a voluntarily submitted feedback attachment, contact us using section 11 and provide enough context to identify the submission.</p>
 <h2>2. Feedback and Support</h2>
 
 <p>
@@ -222,7 +229,7 @@ For privacy questions, support requests, or deletion requests:
 <div class="language">
 
 <h1>Gizlilik Politikası</h1>
-<p class="updated">Son güncelleme: 5 Ekim 2026</p>
+<p class="updated">Son güncelleme: 2 Kasım 2026</p>
 
 <p>
 LiDAR Scanner, 3D tarama işlemlerini öncelikli olarak cihazınız üzerinde
@@ -249,6 +256,13 @@ Bu dosyalar yalnızca sizin paylaşma veya dışa aktarma işlemini açıkça
 seçmeniz durumunda cihazınızdan çıkar.
 </p>
 
+<h2>1A. TrueDepth ve Yüz Verileri</h2>
+<p><strong>Erişilen veriler ve amaç.</strong> Yüz tarama modlarını kullandığınızda LiDAR Scan 3D, cihazınızdaki Apple TrueDepth kamerası ile ARKit/AVFoundation aracılığıyla yüz yüzeyinin geometrisine (köşeler ve üçgenler), derinlik ölçümlerine, yüz/kamera konumuna ve yönelimine, kamera kalibrasyon bilgilerine ve kamera görüntülerine/renk bilgilerine erişir. ARKit yüz tarama modu ayrıca uygun ve nötr ifadeli kareleri seçmek ve tarama kalitesini artırmak için göz kırpma ve çene açıklığı değerlerini okur. Bu veriler yüzün 3D modelini oluşturmak, hizalamak, önizlemek ve isteğe bağlı olarak dışa aktarmak için kullanılır; desteklenen durumlarda renk/texture da oluşturulur. Veriler kişi tanıma veya kimlik doğrulama, kimlik çıkarımı, reklam profillemesi ya da makine öğrenmesi modeli eğitimi için kullanılmaz.</p>
+<p><strong>İşleme ve depolama.</strong> Yüz taraması ve model oluşturma cihazınızda gerçekleştirilir. Çalışma kareleri, geometri ve tarama sonuçları uygulama çalışırken bellekte tutulabilir. Yeni tarama başlatıldığında çalışma verileri sıfırlanır. Modeli dışa aktarma veya önizleme/paylaşmaya hazırlama işlemleri, uygulamanın cihazdaki geçici depolama alanında geometri ve gerektiğinde renk/texture dosyaları oluşturur. Bu dosyalar uygulama veya iOS tarafından kaldırılana kadar kalabilir; tarama ekranını kapatmak bütün çalışma verilerinin ve geçici dosyaların anında silindiğini garanti etmez.</p>
+<p><strong>Kayıtlı taramalar ve saklama süresi.</strong> Taramayı Taramalarım'a kaydetmeyi seçerseniz model dosyası ve kütüphane kaydı uygulamanın yerel Documents klasöründe saklanır. Kayıtlı taramaların otomatik son kullanma süresi yoktur; siz silene veya uygulamayı verileriyle birlikte kaldırana kadar tutulurlar. Taramalarım'dan silmek ilgili kütüphane kaydını ve ilişkili kayıtlı model dosyalarını kaldırır. Daha önce Dosyalar'a dışa aktarılmış, başka uygulamalara/kişilere paylaşılmış veya yedeklerde tutulmuş kopyaları silmez. Cihaz ayarlarınıza bağlı olarak yerel uygulama belgeleri cihaz yedeklerine dahil edilebilir. Yedek kopyaları ilgili cihaz veya yedekleme hizmetinin ayarlarından yönetilir.</p>
+<p><strong>Aktarım ve paylaşım.</strong> Uygulama TrueDepth ölçümlerini, yüz geometrisini, çalışma kamera karelerini veya yüz modellerini geliştiriciye, Cloudflare'e, Resend'e veya başka üçüncü taraflara otomatik olarak göndermez. Geliştirici bir yüz verisi sunucusu veya yüz veritabanı işletmez. Yüz modelini iOS paylaşım arayüzüyle açıkça dışa aktarırsanız veya paylaşırsanız seçili dosyalar sizin belirlediğiniz hedefe iletilir; hedef bunları kendi politikalarına göre saklayabilir. Dışa aktarılan renkli modeller yüzü gösteren görüntüler/texture'lar içerebilir.</p>
+<p><strong>İsteğe bağlı geri bildirim.</strong> Ayrı Geri Bildirim özelliği yüz taraması dosyalarını, yüz ölçümlerini veya çalışma kamera karelerini otomatik olarak eklemez. Yüz veya yüz modeli içeren bir ekran görüntüsünü/fotoğrafı kendiniz seçip geri bildirimle gönderirseniz bu görüntü 2–5. bölümlerde açıklandığı şekilde Cloudflare Workers ve Resend üzerinden destek e-posta hesabımıza iletilir. Bu ekler 5. ve 8. bölümlerdeki destek saklama ve silme talebi uygulamalarına tabidir. Paylaşmak istemediğiniz yüz görüntülerini eklemeyin.</p>
+<p><strong>Kontrolleriniz.</strong> Yüz taraması kamera izni gerektirir. Bu izni reddedebilir veya iOS Ayarları'ndan geri alabilirsiniz. Kaydetme, dışa aktarma, paylaşma ve geri bildirim eki gönderme kararlarını siz verirsiniz. Yerel kayıtlı yüz taramalarını Taramalarım'dan silebilirsiniz; dışa aktarılmış/paylaşılmış kopyaları ve yedekleri ayrıca yönetmeniz gerekir. Kendi isteğinizle gönderdiğiniz bir geri bildirim ekinin silinmesini istemek için 11. bölümdeki iletişim adresini kullanın ve gönderimi bulmamıza yetecek bilgileri sağlayın.</p>
 <h2>2. Geri Bildirim ve Destek</h2>
 
 <p>
